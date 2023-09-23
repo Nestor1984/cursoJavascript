@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Forma #2 - Etiqueta Script en Head-->
+    <script defer> // Con este atributo: dices que quieres que el navegador agrege todo el codigo html y ahora si cargue este codigo
+        alert('Se ejecuta desde el head')
+    </script>
+
+    <!-- Forma #3 - Archivo externo-->
+    <script defer src="./holaMundo.js"> // Defer: para que cargue hasta que ya cargo todo el codigo html
+
+    </script>
+</head>
+<body>
+    <h1>HolaMundo</h1>
+    <!-- Foorma  #1 - Etiqueta Script -->
+    <script>
+        /* Notas importantes:
+        - Javascript es sensible a mayusculas y minusculas
+        - Respetar la sintaxis de tipo camel case. getElementById
+        - Punto y coma al final de cada sentencia.
+        */
+        document.write('Hola Mundo!'); // Para imprimir un texto
+        alert('Hola soy una alerta'); // Para imprimir una ventana emergente o alerta
+        console.log('Hola, desde la consola'); // Para acceder a la consola, con F12   
+    </script>
+</body>
+</html>
